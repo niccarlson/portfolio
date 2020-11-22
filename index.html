@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nicholas Carlson</title>
+	<script defer src="js/daemon.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="no-scroll">
+	<div class="preloader">
+		<div class="preloader-left"></div>
+		<div class="preloader-middle"></div>
+		<div class="preloader-right"></div>
+	</div>
+
+	<div class="projects-spotlight-container" style="display: none;">
+		<div class="projects-spotlight">
+			<div class="projects-spotlight-caption">
+				<button class="projects-spotlight-exit-button" id="projects-spotlight-exit-button" onclick="closeProjectsSpotlight()">X</button>
+				<div class="projects-spotlight-caption-container">
+					<span>
+						<b id="projects-spotlight-title"></b> -
+						<span id="projects-spotlight-description"></span>
+					</span>
+				</div>
+			</div>
+
+			<div class="projects-spotlight-image-container">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+				<img class="projects-spotlight-image">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+
+
+		<div class="section">
+			<div class="squares">
+				<div class="loading-square-left"></div>
+				<div class="loading-square-middle-1"></div>
+				<div class="loading-square-middle-2"></div>
+				<div class="loading-square-right"></div>
+			</div>
+
+
+			<div class="marquee">
+				<span class="marquee-text">
+					<vert-main-text>nicholas carlson</vert-main-text> • design and dev • e. grand rapids, mi • est.
+					2014
+				</span>
+			</div>
+
+			<div class="logo">
+
+				<div class="pupil"></div>
+
+				<div class="eyelid">
+					<img class="eyelid-image" src="src/images/eyelid.png">
+				</div>
+				<img class="logo-image" src="src/images/logo.png">
+			</div>
+
+			<div class="navigation">
+				<a href="#about">about me</a>
+				<a href="#projects">projects</a>
+				<a href="#contact">contact</a>
+				<a href="#team">team</a>
+			</div>
+		</div>
+
+		<div class="section" id="about">
+			<p class="section-header-text">who i am</p>
+			<div class="inner-container">
+				<p class="body-text">
+					<vert-main-text>pinebridge</vert-main-text> is a collective of developers and creatives who
+					strive to provide affordable and accessible multimedia services to growing businesses.<br><br>
+					we are a one-stop-shop solution for businesses wanting to expand their reach and strengthen brand
+					image. we accomplish this through specialization in contemporary and topical management of
+					client-facing medias, such as graphic design and full stack web development.
+				</p>
+			</div>
+		</div>
+		<div class="section" id="projects">
+			<p class="section-header-text">projects</p>
+			<div class="inner-container">
+				<div class="project-component-container project-component-red">
+					<img class="project-component-image" src="src/images/w-1/s-1.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">sushi bar logo</p>
+						<button class="project-component-button" onclick="showSpotlight(0);">
+							>
+						</button>
+
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-blue">
+					<img class="project-component-image" src="src/images/w-2/w-2.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">fashion brand logo concepts</p>
+						<button class="project-component-button" onclick="showSpotlight(1);">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-green">
+					<img class="project-component-image" src="src/images/w-3/s-1.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">various personal illustrations</p>
+						<button class="project-component-button" onclick="showSpotlight(2);">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-yellow">
+					<img class="project-component-image" src="src/images/w-1.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">software dev. company logo</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-red">
+					<img class="project-component-image" src="src/images/w-18.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">media production company logo</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-blue">
+					<img class="project-component-image" src="src/images/w-5.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">agricultural company logo</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-green">
+					<img class="project-component-image" src="src/images/w-2.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">local band logo</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-yellow">
+					<img class="project-component-image" src="src/images/w-3.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">media production company logo</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-red">
+					<img class="project-component-image" src="src/images/w-22.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">various text designs</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-blue">
+					<img class="project-component-image" src="src/images/w-7.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">clothing resale company logo</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-green">
+					<img class="project-component-image" src="src/images/w-4.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">candy bar packaging mockup</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-yellow">
+					<img class="project-component-image" src="src/images/w-24.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">various iconography designs</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-red">
+					<img class="project-component-image" src="src/images/w-21.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">clothing company design package</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-blue">
+					<img class="project-component-image" src="src/images/w-29.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">various video production work</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-green">
+					<img class="project-component-image" src="src/images/w-1.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">............</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+
+				<div class="project-component-container project-component-yellow">
+					<img class="project-component-image" src="src/images/w-1.jpg">
+					<div class="project-component-caption">
+						<p class="project-component-description">............</p>
+						<button class="project-component-button">
+							>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="contact">
+			<p class="section-header-text">contact us</p>
+			<div class="inner-container">
+				<div class="checkmark-container">
+					<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+						<circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+					</svg>
+				</div>
+				<div class="contact-form-container">
+
+					<label class="label-red" for="contact-form-name">name</label>
+					<label class="label-blue" for="contact-form-phone">phone</label>
+					<label class="label-green" for="contact-form-email">email</label>
+
+					<input id="contact-form-name.red" type="text" autocomplete="name">
+					<input id="contact-form-phone.blue" type="tel">
+					<input id="contact-form-email.green" type="email">
+
+					<label class="label-yellow" for="contact-form-body">message</label>
+
+					<div class="message-area">
+						<textarea id="contact-form-body.yellow"></textarea>
+					</div>
+
+					<div class="send-area">
+						<input id="submit-form" onclick="submitForm()" type="button" value="Send">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="team">
+			<p class="section-header-text">our team</p>
+			<div class="inner-container"></div>
+		</div>
+
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyCtuolSJCBPTZURQh8s6f_e0KJYxQnyL1o",
+			authDomain: "niccarlson-com.firebaseapp.com",
+			databaseURL: "https://niccarlson-com.firebaseio.com",
+			projectId: "niccarlson-com",
+			storageBucket: "niccarlson-com.appspot.com",
+			messagingSenderId: "892015803503",
+			appId: "1:892015803503:web:83861ad5dd11d9f9e6619a",
+			measurementId: "G-4CHQ42598F"
+		};
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		var database = firebase.database();
+	</script>
+</body>
+
+</html>
